@@ -1,0 +1,5 @@
+/* Add the CSS to center the text */
+.center-text {
+    display: flex;
+    justify-content: center;
+}
