@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import pandas as pd
 
 app = dash.Dash(__name__)
+server = app.server
 
 text1 = '''The gender had been identified via the specific gender words that the commenters used.\n
         From all 3 video, it shows that the majority of commenters is male. Eventhough there are commmenter accounts 
@@ -726,8 +727,6 @@ app.layout = html.Div(
     className="row flex-display",
     style={"display": "flex", "flex-direction": "column"},
 )
-
-server = app.server
 
 if __name__ == '__main__':
     app.run_server(debug=False)
